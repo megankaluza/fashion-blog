@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #header-title, #footer-title {
   text-align: center; }
 
-hr {
+hr, .column {
   opacity: .5; }
 
 #imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine {
@@ -45,6 +45,17 @@ hr {
 
 span {
   color: #AE8CA3; }
+
+.columns {
+  display: flex; }
+
+.column {
+  background: #AE8CA3;
+  border-radius: 1em;
+  flex: .5; }
+
+.mainColumn {
+  flex: 2; }
 
 .box {
   width: 200px;

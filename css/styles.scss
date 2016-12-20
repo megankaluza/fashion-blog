@@ -16,6 +16,25 @@ span {
   color: $lilac;
 }
 
+// Columns
+
+.columns {
+  display: flex;
+}
+
+.column {
+  @extend %opacity;
+  background: $lilac;
+  border-radius: 1em;
+  flex: .5;
+}
+
+.mainColumn {
+  flex: 2;
+}
+
+// Gallery
+
 .box {
   width: 200px;
   height: 400px;
