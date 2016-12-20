@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.galleryOne, .galleryTwo, .galleryThree, .flex-container, .flex-container ul, .logo {
+.columns, .galleryOne, .galleryTwo, .galleryThree, .flex-container, .flex-container ul, .logo {
   display: flex; }
 
 #header-title, #footer-title {
@@ -12,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 hr, .column {
   opacity: .5; }
 
-#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine {
+#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine, #shoeOne {
   border: 5px solid #FFFFFF;
   background-size: cover;
   background-position: top;
@@ -40,18 +41,29 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+h2 {
+  color: #FFFFFF;
+  position: fixed;
+  top: 400px;
+  left: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 10em;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+
 hr {
   border: 1px solid #AE8CA3; }
 
 span {
   color: #AE8CA3; }
 
-.columns {
-  display: flex; }
-
 .column {
+  border: 5px solid #FFFFFF;
   background: #AE8CA3;
-  border-radius: 1em;
   flex: .5; }
 
 .mainColumn {
@@ -97,6 +109,9 @@ span {
 
 #imageNine {
   background-image: url("../img/skeleton.png"); }
+
+#shoeOne {
+  background-image: url("../img/shoes.jpg"); }
 
 #header-title {
   font-family: "Molle", cursive;

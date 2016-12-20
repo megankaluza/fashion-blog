@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
 @import "base/index";
 
 @import "libraries/neat/neat";
@@ -5,6 +7,21 @@
 
 body {
   // background: $background;
+}
+
+h2 {
+  color: $white;
+  position: fixed;
+  top: 400px;
+  left: 0;
+  font-family: $stack-anton;
+  font-size: 10em;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 hr {
@@ -19,13 +36,13 @@ span {
 // Columns
 
 .columns {
-  display: flex;
+  @extend %flex;
 }
 
 .column {
   @extend %opacity;
+  border: 5px solid $white;
   background: $lilac;
-  border-radius: 1em;
   flex: .5;
 }
 
@@ -110,6 +127,11 @@ span {
   background-image: url('#{$path-img}/skeleton.png');
 }
 
+#shoeOne {
+  @extend %image;
+  background-image: url('#{$path-img}/shoes.jpg');
+}
+
 #header-title {
   @extend %centered;
   font-family: $stack-molle;
@@ -129,12 +151,6 @@ span {
 header {
   @extend %navigation;
 }
-
-// nav {
-//   @extend %navigation;
-//   display: block;
-//   text-transform: uppercase;
-// }
 
 .flex-container {
   @extend %flex;
