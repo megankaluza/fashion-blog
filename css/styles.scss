@@ -52,10 +52,48 @@ span {
   background-image: url('#{$path-img}/color.jpg');
 }
 
+#imageFour {
+  @extend %image;
+  background-image: url('#{$path-img}/jeans.jpg');
+}
+
+#imageFive {
+  @extend %image;
+  background-image: url('#{$path-img}/kate.jpg');
+}
+
+#imageSix {
+  @extend %image;
+  background-image: url('#{$path-img}/rainbow.png');
+}
+
+#imageSeven {
+  @extend %image;
+  background-image: url('#{$path-img}/backpack.jpg');
+}
+
+#imageEight {
+  @extend %image;
+  background-image: url('#{$path-img}/daddy.jpg');
+}
+
+#imageNine {
+  @extend %image;
+  background-image: url('#{$path-img}/skeleton.png');
+}
+
 #header-title {
   @extend %centered;
   font-family: $stack-molle;
   font-size: 3em;
+  text-shadow: 10px 2px 10px $silver;
+}
+
+#footer-title {
+  @extend %centered;
+  border-top: 1px solid $black;
+  font-family: $stack-molle;
+  font-size: 2em;
   text-shadow: 10px 2px 10px $silver;
 }
 
