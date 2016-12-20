@@ -3,12 +3,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   box-sizing: border-box; }
 
-.flex-container, .flex-container ul, .logo {
+.galleryOne, .galleryTwo, .galleryThree, .flex-container, .flex-container ul, .logo {
   display: flex; }
+
+#header-title {
+  text-align: center; }
+
+hr {
+  opacity: .5; }
+
+#imageOne, #imageTwo, #imageThree {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
 
 header {
   font-family: "Molle", cursive;
   background: #FFFFFF;
+  opacity: .5;
   height: 51px;
   border-bottom: 1px solid #000000; }
 
@@ -18,14 +30,41 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body {
-  background: #AE8CA3; }
+hr {
+  border: 1px solid #AE8CA3; }
 
 span {
   color: #AE8CA3; }
 
+.box {
+  width: 200px;
+  height: 400px;
+  flex-grow: 1; }
+
+.galleryOne {
+  flex-wrap: wrap; }
+
+.galleryTwo {
+  flex-wrap: wrap; }
+
+.galleryThree {
+  flex-wrap: wrap; }
+
+#imageOne {
+  background-image: url("../img/eyes.jpg"); }
+
+#imageTwo {
+  background-image: url("../img/light.jpg"); }
+
+#imageThree {
+  background-image: url("../img/color.jpg"); }
+
+#header-title {
+  font-family: "Molle", cursive;
+  font-size: 3em;
+  text-shadow: 10px 2px 10px #BBC8CA; }
+
 .flex-container {
-  opacity: 0.5;
   width: 979px;
   margin: 0 auto;
   justify-content: space-between;
