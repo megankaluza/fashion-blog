@@ -23,11 +23,14 @@
 
 // Margin
 %text {
-  // color: $rose;
+  @extend %opacity;
+  background: $lilac;
+  width: 50%;
   font-family: $stack-molle;
-  font-size: 2em;
-  margin-top: 10em;
-  margin-left: 2em;
+  font-size: 1em;
+  margin: 4em;
+  padding: 2em;
+  border-radius: 1em;
 }
 
 // Navigation
