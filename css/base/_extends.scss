@@ -1,0 +1,28 @@
+// Flex
+%flex {
+  display: flex;
+}
+
+// Background Image
+%image {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+// Margin
+%text {
+  // color: $rose;
+  font-family: $stack-molle;
+  font-size: 2em;
+  margin-top: 10em;
+  margin-left: 2em;
+}
+
+// Navigation
+%navigation {
+  font-family: $stack-molle;
+  background: $white;
+  height: 51px;
+  border-bottom: 1px solid $black;
+}

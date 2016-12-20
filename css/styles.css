@@ -3,6 +3,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   box-sizing: border-box; }
 
+.flex-container, .flex-container ul, .logo {
+  display: flex; }
+
+header {
+  font-family: "Molle", cursive;
+  background: #FFFFFF;
+  height: 51px;
+  border-bottom: 1px solid #000000; }
+
 html {
   box-sizing: border-box; }
 
@@ -11,5 +20,64 @@ html {
 
 body {
   background: #AE8CA3; }
+
+span {
+  color: #AE8CA3; }
+
+.flex-container {
+  opacity: 0.5;
+  width: 979px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px; }
+  .flex-container a {
+    color: #000000; }
+  .flex-container li {
+    padding: 10px;
+    list-style-type: none; }
+
+.flex-container a:before,
+.flex-container a:after {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s; }
+
+.flex-container a:before {
+  margin-right: 5px;
+  content: '[';
+  -webkit-transform: translate(20px);
+  -moz-transform: translate(20px);
+  transform: translate(20px); }
+
+.flex-container a:after {
+  margin-left: 5px;
+  content: ']';
+  -webkit-transform: translate(-20px);
+  -moz-transform: translate(-20px);
+  transform: translate(-20px); }
+
+.flex-container a:hover:before,
+.flex-container a:hover:after,
+.flex-container a:focus:before,
+.flex-container a:focus:after {
+  opacity: 1;
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  transform: translate(0px); }
+
+a:link {
+  text-decoration: none; }
+
+.logo {
+  width: 3em;
+  align-items: center; }
+
+.search {
+  margin-bottom: 1em;
+  align-self: flex-end;
+  align-items: center;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
