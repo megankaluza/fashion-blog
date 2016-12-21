@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $('.box').click(function(){
-     $('.box').toggleClass('clicked');
-  });
-});
+// $(document).ready(function(){
+//   $('.box').click(function(){
+//      $('.lightbox').toggleClass('clicked');
+//   });
+// });

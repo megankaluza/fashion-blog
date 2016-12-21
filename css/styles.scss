@@ -63,6 +63,7 @@ span {
         font-size:22px;
         }
     .lightbox .content {
+      @extend %centered;
         display:block;
         padding:10px 0 0 0px;
         font-size:18px;
@@ -274,7 +275,6 @@ header {
     -moz-transform: translate(0px);
     transform: translate(0px);
 }
-
 
 a:link {
   text-decoration: none;
