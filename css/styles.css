@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Anton|Molle:400i");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .columns, .galleryOne, .galleryTwo, .galleryThree, .flex-container, .flex-container ul, .logo {
   display: flex; }
 
-.post, .lightbox .content, #header-title, #footer-title {
+.lightbox .content, .post, #header-title, #footer-title {
   text-align: center; }
 
 .post, hr, .column {
   opacity: .5; }
 
-#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine, #shoeOne {
+#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine {
   border: 5px solid #FFFFFF;
   background-size: cover;
   background-position: top;
@@ -35,27 +35,7 @@ header {
   height: 51px;
   border-bottom: 1px solid #000000; }
 
-#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive, #imageSix, #imageSeven, #imageEight, #imageNine {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease; }
-  #imageOne:hover, #imageTwo:hover, #imageThree:hover, #imageFour:hover, #imageFive:hover, #imageSix:hover, #imageSeven:hover, #imageEight:hover, #imageNine:hover {
-    -webkit-filter: blur(2px); }
-
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 h2 {
-  color: #FFFFFF;
-  position: relative;
-  top: 700px;
-  font-family: "Anton", sans-serif;
-  font-size: 10em;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -63,37 +43,27 @@ h2 {
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
 
-hr {
-  border: 1px solid #AE8CA3; }
-
-span {
-  color: #AE8CA3; }
-
-.post {
-  display: none; }
-
-.reply {
-  width: 20px; }
-
 .lightbox .modal {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  border-radius: 1em;
   min-width: 500px;
   margin: 2% auto;
-  padding: 20px;
-  background-color: #FFF;
+  padding: 30px;
+  background-color: #BBC8CA;
   box-shadow: 0px 1px 26px -3px #777777; }
 
 .lightbox .title {
   margin: 0;
   padding: 0 0 10px 0px;
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px #000000 solid;
+  border-top: 1px #000000 solid;
   font-size: 22px; }
 
 .lightbox .content {
   display: block;
-  padding: 10px 0 0 0px;
+  padding: 10px 5px;
   font-size: 18px;
   line-height: 22px; }
 
@@ -122,6 +92,37 @@ span {
   /** Show lightbox when it is target */
   display: block;
   outline: none; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+h2 {
+  color: #FFFFFF;
+  position: relative;
+  top: 700px;
+  font-family: "Anton", sans-serif;
+  font-size: 10em; }
+
+hr {
+  border: 1px solid #AE8CA3; }
+
+span {
+  color: #AE8CA3; }
+
+.grow {
+  transition: all .2s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.1); }
+
+.heart {
+  margin-top: 6px;
+  width: 20px; }
+
+.post {
+  display: none; }
 
 .column {
   width: 200px;
@@ -172,9 +173,6 @@ span {
 
 #imageNine {
   background-image: url("../img/skeleton.png"); }
-
-#shoeOne {
-  background-image: url("../img/shoes.jpg"); }
 
 #header-title {
   font-family: "Molle", cursive;

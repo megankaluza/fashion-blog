@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Anton|Molle:400i');
 
 @import "base/index";
 
@@ -13,17 +13,12 @@
 // }
 
 h2 {
+  @extend %rotate;
   color: $white;
   position: relative;
   top: 700px;
   font-family: $stack-anton;
   font-size: 10em;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 hr {
@@ -35,67 +30,22 @@ span {
   color: $lilac;
 }
 
+.grow {
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.heart {
+  margin-top: 6px;
+  width: 20px;
+}
+
 .post {
   @extend %text;
   @extend %centered;
   display: none;
-}
-
-.reply {
-  width: 20px;
-}
-
-// Modal
-.lightbox .modal {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-   	min-width:500px;
-    margin: 2% auto;
-    padding:20px;
-    background-color:#FFF;
-    box-shadow: 0px 1px 26px -3px #777777;
-    }
-    .lightbox .title {
-        margin:0;
-        padding:0 0 10px 0px;
-        border-bottom:1px #ccc solid;
-        font-size:22px;
-        }
-    .lightbox .content {
-      @extend %centered;
-        display:block;
-        padding:10px 0 0 0px;
-        font-size:18px;
-        line-height:22px;
-        }
-    .lightbox .close {
-        margin: 5px;
-        float:right;
-        display:block;
-        text-decoration:none;
-        font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size:22px;
-        color:#858585;
-        }
-
-        .lightbox {
-    /** Hide the lightbox */
-    display: none;
-    /** Apply basic lightbox styling */
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color:#333333;
-    }
-
-    .lightbox:target {
-    /** Show lightbox when it is target */
-    display: block;
-    outline: none;
 }
 
 // Columns
@@ -141,61 +91,56 @@ span {
 
 #imageOne {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/eyes.jpg');
 }
 
 #imageTwo {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/light.jpg');
 }
 
 #imageThree {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/color.jpg');
 }
 
 #imageFour {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/jeans.jpg');
 }
 
 #imageFive {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/kate.jpg');
 }
 
 #imageSix {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/rainbow.png');
 }
 
 #imageSeven {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/backpack.jpg');
 }
 
 #imageEight {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/daddy.jpg');
 }
 
 #imageNine {
   @extend %image;
-  @extend %hover;
+  // @extend %hover;
   background-image: url('#{$path-img}/skeleton.png');
-}
-
-#shoeOne {
-  @extend %image;
-  background-image: url('#{$path-img}/shoes.jpg');
 }
 
 #header-title {
