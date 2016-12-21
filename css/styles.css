@@ -51,11 +51,9 @@ html {
   box-sizing: inherit; }
 
 h2 {
-  display: flex;
-  justify-content: flex-end;
   color: #FFFFFF;
   position: relative;
-  top: 100px;
+  top: 700px;
   font-family: "Anton", sans-serif;
   font-size: 10em;
   -webkit-transform: rotate(-90deg);
@@ -195,5 +193,9 @@ a:link {
   align-self: flex-end;
   align-items: center;
   text-align: center; }
+
+@media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .column {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
