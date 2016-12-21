@@ -70,7 +70,7 @@ span {
 
 .box {
   width: 200px;
-  height: 400px;
+  height: 500px;
   flex-grow: 1;
 }
 
@@ -110,7 +110,7 @@ span {
 #imageFour {
   @extend %image;
   // @extend %hover;
-  background-image: url('#{$path-img}/jeans.jpg');
+  background-image: url('#{$path-img}/skeleton.png');
 }
 
 #imageFive {
@@ -122,7 +122,7 @@ span {
 #imageSix {
   @extend %image;
   // @extend %hover;
-  background-image: url('#{$path-img}/rainbow.png');
+  background-image: url('#{$path-img}/glasses.jpg');
 }
 
 #imageSeven {
@@ -134,13 +134,13 @@ span {
 #imageEight {
   @extend %image;
   // @extend %hover;
-  background-image: url('#{$path-img}/daddy.jpg');
+  background-image: url('#{$path-img}/bun.jpg');
 }
 
 #imageNine {
   @extend %image;
   // @extend %hover;
-  background-image: url('#{$path-img}/skeleton.png');
+  background-image: url('#{$path-img}/jeans.jpg');
 }
 
 #header-title {

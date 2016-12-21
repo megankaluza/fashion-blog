@@ -135,7 +135,7 @@ span {
 
 .box {
   width: 200px;
-  height: 400px;
+  height: 500px;
   flex-grow: 1; }
 
 .galleryOne {
@@ -157,22 +157,22 @@ span {
   background-image: url("../img/color.jpg"); }
 
 #imageFour {
-  background-image: url("../img/jeans.jpg"); }
+  background-image: url("../img/skeleton.png"); }
 
 #imageFive {
   background-image: url("../img/kate.jpg"); }
 
 #imageSix {
-  background-image: url("../img/rainbow.png"); }
+  background-image: url("../img/glasses.jpg"); }
 
 #imageSeven {
   background-image: url("../img/backpack.jpg"); }
 
 #imageEight {
-  background-image: url("../img/daddy.jpg"); }
+  background-image: url("../img/bun.jpg"); }
 
 #imageNine {
-  background-image: url("../img/skeleton.png"); }
+  background-image: url("../img/jeans.jpg"); }
 
 #header-title {
   font-family: "Molle", cursive;
