@@ -7,12 +7,12 @@
 		// Default parameters
 
 		var options = $.extend({
-			height : "250",
+			height : "500",
 			width : "500",
 			title:"JQuery Modal Box Demo",
 			description: "Example of how to create a modal box.",
-			top: "50%",
-			left: "50%",
+			top: "30%",
+			left: "30%",
 		},prop);
 
 		return this.click(function(e){
@@ -43,13 +43,13 @@
 			});
 			$('.paulund_modal_close').css({
 				'position':'relative',
-				'top':'-25px',
-				'left':'20px',
+				// 'top':'-10px',
+				'left':'35px',
 				'float':'right',
 				'display':'block',
-				'height':'50px',
-				'width':'50px',
-				'background': 'url(images/close.png) no-repeat',
+				'height':'100px',
+				'width':'100px',
+				'background': 'url(img/exit.png) no-repeat',
 			});
                         /*Block page overlay*/
 			var pageHeight = $(document).height();
@@ -60,12 +60,19 @@
 				'top':'0',
 				'left':'0',
 				'background-color':'rgba(0,0,0,0.6)',
+
+      //   'filter':'blur(4px)',
+      //  '-o-filter':'blur(4px)',
+      //  '-ms-filter':'blur(4px)',
+      //  '-moz-filter':'blur(4px)',
+      //  '-webkit-filter':'blur(4px)',
+
 				'height':pageHeight,
 				'width':pageWidth,
 				'z-index':'10'
 			});
 			$('.paulund_inner_modal_box').css({
-				'background-color':'#fff',
+				// 'background-color':'#fff',
 				'height':(options.height - 50) + 'px',
 				'width':(options.width - 50) + 'px',
 				'padding':'10px',
@@ -83,8 +90,9 @@
 		}
 
 		 function add_popup_box(){
-			 var pop_up = $('<div class="paulund_modal_box"><a href="#" class="paulund_modal_close"></a><div class="paulund_inner_modal_box"><h2>' + options.title + '</h2><p>' + options.description + '</p></div></div>');
+			 var pop_up = $('<div class="paulund_modal_box"><a href="#" class="paulund_modal_close"></a><div class="paulund_inner_modal_box"><h2>' + '</h2><p>' + '</p></div></div>');
 			 $(pop_up).appendTo('.paulund_block_page');
+
 
 			 $('.paulund_modal_close').click(function(){
 				$(this).parent().fadeOut().remove();
