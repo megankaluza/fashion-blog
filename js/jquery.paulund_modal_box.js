@@ -38,7 +38,8 @@
 				'border-radius':'10px',
 				'-moz-border-radius':'10px',
 				'-webkit-border-radius':'10px',
-				'background': '#f2f2f2',
+				'background': '#EE4B6A',
+				'opacity': '.5',
 				'z-index':'50',
 			});
 			$('.paulund_modal_close').css({
