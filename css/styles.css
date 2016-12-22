@@ -2477,7 +2477,8 @@ h2 {
   padding: 0 0 10px 0px;
   border-bottom: 1px #000000 solid;
   border-top: 1px #000000 solid;
-  font-size: 22px; }
+  font-size: 22px;
+  font-family: "Molle", cursive; }
 
 .lightbox .content {
   display: block;

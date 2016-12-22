@@ -22,6 +22,7 @@
         border-bottom: 1px $black solid;
         border-top: 1px $black solid;
         font-size: 22px;
+        font-family: $stack-molle;
         }
     .lightbox .content {
       @extend %centered;
