@@ -165,6 +165,9 @@ span {
 // Flex Navigation
 header {
   @extend %navigation;
+  background-image: url('../img/pin-up.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex-container {
