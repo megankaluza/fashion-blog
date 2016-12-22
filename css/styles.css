@@ -2421,7 +2421,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .flex-container, .flex-container ul, .columns, .galleryOne, .galleryTwo, .galleryThree {
   display: flex; }
 
-.lightbox .content, #header-title, #footer-title, .post {
+.lightbox .modal .content, #header-title, #footer-title, .post {
   text-align: center; }
 
 .post, hr, .column {
@@ -2463,7 +2463,7 @@ h2 {
   width: min-content;
   min-width: 500px;
   margin: 5% auto;
-  padding: 30px;
+  padding: 35px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 26px -3px #777777;
   transition-duration: 1s; }
@@ -2471,29 +2471,26 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-
-.lightbox .title {
-  margin: 0;
-  padding: 0 0 10px 0px;
-  border-bottom: 1px #000000 solid;
-  border-top: 1px #000000 solid;
-  font-size: 22px;
-  font-family: "Molle", cursive; }
-
-.lightbox .content {
-  display: block;
-  padding: 10px 5px;
-  font-size: 18px;
-  line-height: 22px; }
-
-.lightbox .close {
-  margin: 5px;
-  float: right;
-  display: block;
-  text-decoration: none;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  color: #858585; }
+  .lightbox .modal .title {
+    margin: 0;
+    padding: 0 0 10px 0px;
+    border-bottom: 1px #000000 solid;
+    border-top: 1px #000000 solid;
+    font-size: 22px;
+    font-family: "Molle", cursive; }
+  .lightbox .modal .content {
+    display: block;
+    padding: 10px 5px;
+    font-size: 18px;
+    line-height: 22px; }
+  .lightbox .modal .close {
+    margin: 5px;
+    float: right;
+    display: block;
+    text-decoration: none;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #858585; }
 
 .lightbox {
   /** Hide the lightbox */
@@ -2506,11 +2503,10 @@ h2 {
   top: 0;
   left: 0;
   color: #333333; }
-
-.lightbox:target {
-  /** Show lightbox when it is target */
-  display: block;
-  outline: none; }
+  .lightbox:target {
+    /** Show lightbox when it is target */
+    display: block;
+    outline: none; }
 
 header {
   background-repeat: no-repeat;
