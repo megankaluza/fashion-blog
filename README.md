@@ -1,13 +1,16 @@
 # _Aesthetic Fashion Blog_
 
-#### _Epicodus Capstone Project_
+#### _Epicodus: Capstone Final Project 12-22-16_
 
 #### By _**Megan Kaluza**_
 
-_Sketch MockUp_
+# _Inspiration_
+![screenshot](inspiration.png)
+
+# _Sketch MockUp_
 ![screenshot](screen_shot.png)
 
-_Live_
+# _Live_
 ![screenshot](live.png)
 
 ## Description
@@ -25,6 +28,7 @@ _Objectives_
 * _gem install sass_
 * _gem install bourbon_
 * _gem install neat_
+* _gem install saffron_
 * _sass --watch ._
 * _Open in browser of your choice_
 
@@ -41,7 +45,10 @@ _No known bugs at this time_
 * _HTML_
 * _CSS_
 * _SASS_
-* _Flex Box_
+* _Flexbox_
+* _Saffron_
+* _Bourbon_
+* _Neat_
 
 ### License
 

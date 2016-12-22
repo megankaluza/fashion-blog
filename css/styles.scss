@@ -1,9 +1,10 @@
+// Fonts
 @import url('https://fonts.googleapis.com/css?family=Anton|Molle:400i');
-
+// Libraries
 @import "libraries/neat/neat";
 @import "libraries/bourbon/bourbon";
 @import "libraries/saffron/saffron";
-
+// Sass Components
 @import "base/index";
 
 h2 {
@@ -93,25 +94,21 @@ span {
 
 #imageOne {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/eyes.jpg');
 }
 
 #imageTwo {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/light.jpg');
 }
 
 #imageThree {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/color.jpg');
 }
 
 #imageFour {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/skeleton.png');
 }
 
@@ -123,25 +120,21 @@ span {
 
 #imageSix {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/glasses.jpg');
 }
 
 #imageSeven {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/backpack.jpg');
 }
 
 #imageEight {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/bun.jpg');
 }
 
 #imageNine {
   @extend %image;
-  // @extend %hover;
   background-image: url('#{$path-img}/jeans.jpg');
 }
 
