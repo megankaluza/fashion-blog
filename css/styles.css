@@ -2461,13 +2461,16 @@ h2 {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-radius: 1em;
   min-width: 500px;
-  margin: 2% auto;
+  margin: 5% auto;
   padding: 30px;
-  background-color: #BBC8CA;
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 26px -3px #777777;
   transition-duration: 120ms; }
+  .lightbox .modal .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .lightbox .title {
   margin: 0;
@@ -2509,7 +2512,6 @@ h2 {
   outline: none; }
 
 header {
-  background-image: url("../img/pin-up.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -2585,6 +2587,13 @@ hr {
 
 span {
   color: #AE8CA3; }
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px); }
 
 .grow {
   transition: all .2s ease-in-out; }
