@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Molle:400i');
 
-@import "base/index";
-
 @import "libraries/neat/neat";
 @import "libraries/bourbon/bourbon";
+@import "libraries/saffron/saffron";
 
-// button {
-//   padding: 1em;
-//   margin: 1em;
-//   border: 1px solid $black;
-//   background: $white;
-// }
+@import "base/index";
 
 h2 {
   @extend %rotate;
@@ -55,8 +49,8 @@ span {
 }
 
 .column {
-  width: 200px;
   @extend %opacity;
+  width: 200px;
   border: 5px solid $white;
   background: $lilac;
   flex: .2;
@@ -143,95 +137,8 @@ span {
   background-image: url('#{$path-img}/jeans.jpg');
 }
 
-#header-title {
-  @extend %centered;
-  font-family: $stack-molle;
-  font-size: 3em;
-  text-shadow: 10px 2px 10px $silver;
-}
-
-#footer-title {
-  @extend %centered;
-  border-top: 1px solid $black;
-  font-family: $stack-molle;
-  font-size: 2em;
-  text-shadow: 10px 2px 10px $silver;
-}
-
 .clicked {
   height: 1000px;
-}
-
-// Flex Navigation
-header {
-  @extend %navigation;
-  background-image: url('../img/pin-up.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.flex-container {
-  @extend %flex;
-  // @extend %opacity;
-  width: 979px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  height: 52px;
-    a{
-      color: $black;
-    }
-    ul {
-      @extend %flex;
-    }
-    li {
-      padding: 10px;
-      list-style-type: none;
-    }
-}
-
-.flex-container a:before,
-.flex-container a:after {
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
-}
-
-.flex-container a:before {
-    margin-right: 5px;
-    content: '[';
-    -webkit-transform: translate(20px);
-    -moz-transform: translate(20px);
-    transform: translate(20px);
-}
-
-.flex-container a:after {
-    margin-left: 5px;
-    content: ']';
-    -webkit-transform: translate(-20px);
-    -moz-transform: translate(-20px);
-    transform: translate(-20px);
-}
-
-.flex-container a:hover:before,
-.flex-container a:hover:after,
-.flex-container a:focus:before,
-.flex-container a:focus:after {
-    opacity: 1;
-    -webkit-transform: translate(0px);
-    -moz-transform: translate(0px);
-    transform: translate(0px);
-}
-
-a:link {
-  text-decoration: none;
-}
-
-.logo {
-  @extend %flex;
-  width: 3em;
-  align-items: center;
 }
 
 // Mobile Media Query
