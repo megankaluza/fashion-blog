@@ -1,0 +1,23 @@
+{
+  "name": "fashion-blog",
+  "version": "1.0.0",
+  "description": "#### _Epicodus: Capstone Final Project 12-22-16_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megankaluza/fashion-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megankaluza/fashion-blog/issues"
+  },
+  "homepage": "https://github.com/megankaluza/fashion-blog#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
